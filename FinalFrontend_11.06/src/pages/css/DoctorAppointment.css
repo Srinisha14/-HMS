@@ -1,0 +1,131 @@
+.medical-history-entry p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #045b91;
+  margin: 8px 0;
+  line-height: 1.5;
+}
+.update-form label {
+  font-weight: 600;
+  margin-top: 10px;
+  display: block;
+  color: #045b91;
+}
+
+.update-form input,
+.update-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.card-footer.right-align {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.edit-button,
+.view-button,
+.save-button,
+.cancel-button {
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.view-button {
+  background-color: #4682B4;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #4B9CD3;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.view-button:hover,
+.edit-button:hover {
+  opacity: 0.9;
+}
+
+.save-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #dc3545;
+  color: white;
+}
+.edit-button:hover,
+.view-button:hover,
+.save-button:hover,
+.cancel-button:hover {
+  opacity: 0.9;
+}
+.medical-history-container {
+  background: #eaf6ff;
+  padding: 18px;
+  border-radius: 12px;
+  margin-top: 15px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 20px;
+  color: #045b91;
+}
+
+.medical-history-entry p {
+  margin: 8px 0;
+  line-height: 1.5;
+}
+.medical-history-entry {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #ccc;
+}
+
+.history-separator {
+  margin: 20px 0;
+  border: none;
+  border-top: 2px solid #045b91;
+}
+.search-bar {
+  width: 30%;
+  padding: 14px 18px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Segoe UI', sans-serif;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-bar::placeholder {
+  color: #888;
+  font-style: italic;
+  font-size: 15px;
+}
+
+.search-bar:focus {
+  border-color: #045b91;
+  box-shadow: 0 0 5px rgba(4, 91, 145, 0.3);
+  outline: none;
+}
+

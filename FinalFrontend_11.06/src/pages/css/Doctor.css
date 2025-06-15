@@ -1,0 +1,205 @@
+/* === GLOBAL === */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* === FORM STYLING === */
+.doctor-form-container {
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  color: #045b91;
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doctor-form-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.doctor-form-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 26px;
+  color: #045b91;
+}
+
+.doctor-form-container label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #045b91;
+}
+
+.doctor-form-container input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #045b91;
+}
+
+.doctor-form-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #045b91;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.doctor-form-container button:hover {
+  background-color: #034a78;
+}
+
+/* === SEARCH BAR SECTION === */
+.search-bar-container {
+  width: 100%;
+  background-color: #eef6fb;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-bar input {
+  width: 300px;
+  padding: 10px 12px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  color: #045b91;
+}
+
+.search-bar input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.error-msg {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* === PROFILE HISTORY SECTION === */
+.profile-history {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #eef6fb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-history h3 {
+  text-align: center;
+  color: #045b91;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+.profile-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* === TOGGLE FORM BUTTON === */
+.toggle-form-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.toggle-form-button {
+  padding: 10px 20px;
+  background-color: #045b91;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.toggle-form-button:hover {
+  background-color: #034a78;
+}
+
+/* === POPUP MESSAGE === */
+.popup-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #045b91;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 90% {
+    opacity: 1;
+  }
+}
+.doctor-name {
+  font-weight: 700;
+  font-size: 20px;
+  color: #045b91;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+.specialization {
+  font-size: 16px;
+  color: #045b91;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}

@@ -1,0 +1,304 @@
+.appointment-form-container {
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  color: #045b91;
+  font-family: 'Roboto', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+ 
+.appointment-form-container label[for="appointmentDate"] {
+  margin-bottom: 12px;
+}
+ 
+ 
+.appointment-form-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+ 
+.appointment-form-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 26px;
+  font-family: 'Poppins', sans-serif;
+  color: #045b91;
+}
+ 
+.appointment-form-container label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #045b91;
+  font-family: 'Poppins', sans-serif;
+}
+ 
+.appointment-form-container input,
+.appointment-form-container select,
+.appointment-form-container textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #045b91;
+  font-family: 'Roboto', sans-serif;
+}
+ 
+.appointment-form-container textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+ 
+.appointment-form-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #045b91;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+ 
+.appointment-form-container button:hover {
+  background-color: #034a78;
+}
+ 
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 12px;
+}
+ 
+.success {
+  color: green;
+  text-align: center;
+  margin-top: 12px;
+}
+.appointment-history {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #eef6fb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+ 
+.appointment-history h3 {
+  text-align: center;
+  color: #045b91;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+ 
+.appointment-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+ 
+.appointment-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+ 
+.appointment-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+ 
+.card-body p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #045b91;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+ 
+.card-footer {
+  margin-top: 15px;
+  text-align: right;
+}
+ 
+.edit-button {
+  padding: 8px 16px;
+  background-color: #045b91;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+ 
+.edit-button:hover {
+  background-color: #034a78;
+}
+ 
+.delete-button {
+  background-color: #d9534f;
+  margin-left: 10px;
+}
+ 
+.delete-button:hover {
+  background-color: #c9302c;
+}
+ 
+.card-placeholder {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  padding: 40px 0;
+  font-family: 'Roboto', sans-serif;
+}
+.search-bar-container {
+  width: 100%;
+  background-color: #eef6fb;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+ 
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+/* Deleting Popup Overlay */
+.deleting-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it appears above all other elements */
+}
+ 
+/* Deleting Popup Content */
+.deleting-popup-content {
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #045b91; /* Match the theme color */
+  font-family: 'Poppins', sans-serif;
+}
+/* .cancel-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+ 
+.cancel-button:hover {
+  background-color: #d32f2f;
+} */
+ /* === Edit Mode Styling for Appointment Card === */
+.appointment-card.editing {
+  background-color: #f0faff;
+  border: 1px solid #045b91;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(4, 91, 145, 0.15);
+}
+
+/* Labels */
+.appointment-card.editing .card-body label {
+  display: inline-block;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #034a78;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Inputs and Dropdowns */
+.appointment-card.editing .card-body input,
+.appointment-card.editing .card-body select {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  border: 1px solid #045b91;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: #045b91;
+  background-color: #ffffff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus Effects */
+.appointment-card.editing .card-body input:focus,
+.appointment-card.editing .card-body select:focus {
+  border-color: #034a78;
+  outline: none;
+  box-shadow: 0 0 6px rgba(4, 91, 145, 0.3);
+}
+
+
+.appointment-card.editing .card-body select {
+  appearance: none;
+  background-color: #ffffff;
+  background-image: url("data:image/webp;base64,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");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 12px;
+  padding: 14px 40px 14px 16px;
+  border: 1px solid #045b91;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: #045b91;
+  margin-bottom: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.appointment-card.editing .card-body select:focus {
+  border-color: #034a78;
+  outline: none;
+  box-shadow: 0 0 6px rgba(4, 91, 145, 0.3);
+}
+
+/* Static Text */
+.appointment-card.editing .card-body p {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Footer Buttons */
+.appointment-card.editing .card-footer {
+  margin-top: 20px;
+  text-align: right;
+}

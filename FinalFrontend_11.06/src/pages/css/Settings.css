@@ -1,0 +1,240 @@
+/* patient-form-container adjustments */
+.patient-form-container {
+  max-width: 550px; /* Increased width */
+  margin: 40px auto;
+  padding: 25px 30px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  color: #045b91;
+  font-family: 'Roboto', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: auto; /* Allow height to adjust based on content */
+  min-height: 200px; /* Reduced minimum height to imply shorter length */
+}
+ 
+.patient-form-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+ 
+.patient-form-container h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 26px;
+  font-family: 'Poppins', sans-serif;
+  color: #045b91;
+}
+ 
+.patient-form-container label {
+  display: block;
+  margin-top: 20px; /* Reduced top margin to shorten overall length */
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #045b91;
+  font-family: 'Poppins', sans-serif;
+}
+ 
+.patient-form-container input,
+.patient-form-container select,
+.patient-form-container textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #045b91;
+  font-family: 'Roboto', sans-serif;
+}
+ 
+.patient-form-container textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+ 
+/* Original Save Changes button */
+.patient-form-container button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #045b91;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+ 
+.patient-form-container button[type="submit"]:hover {
+  background-color: #034a78;
+}
+ 
+small {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #045b91;
+}
+ 
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 12px;
+}
+ 
+.success {
+  color: green;
+  text-align: center;
+  margin-top: 12px;
+}
+ 
+/* Checkbox styling */
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 15px; /* Adjusted spacing */
+  font-size: 15px;
+  font-weight: 600;
+  color: #045b91;
+  font-family: 'Poppins', sans-serif;
+}
+ 
+.checkbox-wrapper input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #045b91;
+  margin: 0;
+}
+ 
+/* Ensures label aligns with checkbox */
+.checkbox-wrapper label {
+  margin: 0;
+}
+ 
+/* Extra space between checkboxes and username */
+.username-label {
+  margin-top: 25px; /* Adjusted spacing */
+}
+ 
+/* Button container for side-by-side layout */
+.button-group {
+  display: flex;
+  justify-content: space-between; /* Puts space between buttons */
+  gap: 15px; /* Gap between buttons */
+  margin-top: 20px; /* Space above the button group */
+}
+ 
+/* New buttons for popups - individual styling for side-by-side */
+.patient-form-container .info-button {
+  background-color: #4682B4; /* Green color for info buttons */
+  flex: 1; /* Allows buttons to share available space equally */
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px; /* Slightly smaller font for better fit */
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  color: white; /* Text color for the button */
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+ 
+.patient-form-container .info-button:hover {
+  background-color: #4B9CD3;
+}
+ 
+/* Dark mode support */
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+ 
+body.dark-mode .patient-form-container {
+  background-color: #1e1e1e;
+  border-color: #333;
+  color: #f0f0f0;
+}
+ 
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  border-color: #555;
+}
+ 
+body.dark-mode .modal-content {
+  background-color: #2a2a2a;
+  border-color: #555;
+  color: #f0f0f0;
+}
+ 
+body.dark-mode .close-button {
+  color: #f0f0f0;
+}
+ 
+/* Modal (Popup) Styles - kept as is as they are functional */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+ 
+.modal-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  color: #045b91;
+  font-family: 'Roboto', sans-serif;
+}
+ 
+.modal-content h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #045b91;
+  font-family: 'Poppins', sans-serif;
+}
+ 
+.modal-content p {
+  line-height: 1.6;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+ 
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #045b91;
+  font-weight: bold;
+}
+ 
+.close-button:hover {
+  color: #dc3545;
+}
+ 

@@ -1,0 +1,347 @@
+/* === FORM STYLING === */
+.schedule-form-container {
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  color: #045b91;
+  font-family: 'Roboto', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.schedule-form-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.schedule-form-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 26px;
+  font-family: 'Poppins', sans-serif;
+  color: #045b91;
+}
+
+.schedule-form-container label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #045b91;
+  font-family: 'Poppins', sans-serif;
+}
+
+.schedule-form-container input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #045b91;
+  font-family: 'Roboto', sans-serif;
+}
+
+.schedule-form-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #045b91;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.schedule-form-container button:hover {
+  background-color: #034a78;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.success {
+  color: green;
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* === HISTORY SECTION === */
+.schedule-history {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #eef6fb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-history h3 {
+  text-align: center;
+  color: #045b91;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+.schedule-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.schedule-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* === CARD HEADER === */
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.avatar-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #d0e8f2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin-right: 15px;
+}
+
+.doctor-schedule-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  line-height: 1.2;
+}
+
+.doctor-schedule-name {
+  font-weight: 700;
+  font-size: 20px;
+  color: #045b91;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+.doctor-schedule-specialization {
+  font-size: 16px;
+  color: #045b91;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+/* === CARD BODY === */
+.card-body p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #045b91;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card-body input {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 6px 0;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card-body label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #045b91;
+  margin-top: 10px;
+  display: block;
+}
+
+/* === CARD FOOTER === */
+.card-footer {
+  margin-top: 15px;
+  text-align: right;
+}
+
+.edit-button {
+  padding: 8px 16px;
+  background-color: #045b91;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background-color: #034a78;
+}
+
+.delete-button {
+  background-color: #d9534f;
+  margin-left: 10px;
+}
+
+.delete-button:hover {
+  background-color: #c9302c;
+}
+
+/* === PLACEHOLDER === */
+.card-placeholder {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  padding: 40px 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* === POPUP MESSAGE === */
+.popup-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #045b91;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  10%,
+  90% {
+    opacity: 1;
+  }
+}
+
+/* === SEARCH FILTERS === */
+.search-filters {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.search-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #045b91;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 15px;
+}
+
+.search-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.search-field {
+  flex: 0 0 250px;
+  /* Allows flexible width with a minimum of 300px */
+  max-width: 100%;
+}
+
+
+.search-field label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #045b91;
+  font-family: 'Poppins', sans-serif;
+}
+
+.search-field input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  color: #045b91;
+}
+
+.doctor-select {
+
+  width: 100%;
+
+  padding: 10px 12px;
+
+  margin-bottom: 10px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #aaa;
+
+  border-radius: 6px;
+
+  font-size: 14px;
+
+  color: #045b91;
+
+  font-family: 'Roboto', sans-serif;
+
+  /* Add a little arrow styling for better visual */
+
+  -webkit-appearance: none;
+  /* Remove default arrow on webkit browsers */
+
+  -moz-appearance: none;
+  /* Remove default arrow on mozilla browsers */
+
+  appearance: none;
+  /* Remove default arrow */
+
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23045b91%22%20d%3D%22M287%2C197.9a15.4%2C15.4%2C0%2C0%2C1-21.7%2C0L146.2%2C78.9%2C27.1%2C197.9A15.4%2C15.4%2C0%2C0%2C1%205.4%2C176.2L135.5%2C46.1a15.4%2C15.4%2C0%2C0%2C1%2021.7%2C0L287%2C176.2A15.4%2C15.4%2C0%2C0%2C1%20287%2C197.9Z%22%2F%3E%3C%2Fsvg%3E');
+
+  background-repeat: no-repeat;
+
+  background-position: right 10px top 50%;
+
+  background-size: 12px auto;
+
+  padding-right: 30px;
+  /* Make space for the custom arrow */
+
+}

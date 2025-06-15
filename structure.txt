@@ -1,0 +1,21 @@
+├── Backend_Final_10_06/
+│   ├── ApiGateway/
+│   │   └── ApiGateway/          (Spring Boot API Gateway)
+│   ├── AppointmentService/
+│   │   └── AppointmentService/  (Spring Boot Service)
+│   ├── AuthService-1/
+│   │   └── AuthService-1/       (Spring Boot Authentication Service)
+│   ├── DoctorService/
+│   │   └── DoctorService/       (Spring Boot Service)
+│   ├── MedicalHistoryService/
+│   │   └── MedicalHistoryService/ (Spring Boot Service)
+│   ├── NotificationService/
+│   │   └── NotificationService/ (Spring Boot Email Notification Service)
+│   ├── PatientService/
+│   │   └── PatientService/      (Spring Boot Service)
+│   └── ServiceRegistry/
+│       └── ServiceRegistry/     (Spring Boot Eureka Server)
+└── FinalFrontend_11.06/
+├── public/
+├── src/
+└── package.json             (React Frontend Application)

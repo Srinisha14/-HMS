@@ -1,0 +1,108 @@
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .login-logo-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 4px solid #045b91; /* This makes the border thicker */
+  }
+  
+  .logo-text {
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #045b91;
+    font-family: 'Poppins', sans-serif;
+  }
+  /*  */
+  .login-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* ✅ Ensures full-screen centering */
+    background-color: #eef4f9; /* Matching Register page */
+  }
+
+  /*  */
+.login-form-container {
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 25px 30px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    color: #045b91;
+    font-family: 'Roboto', sans-serif;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .login-form-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .login-form-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif;
+    color: #045b91;
+  }
+  
+  .login-form-container label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #045b91;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .login-form-container input,
+  .login-form-container select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #045b91;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .login-form-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #045b91;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .login-form-container button:hover {
+    background-color: #034a78;
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+    margin-top: 12px;
+  }
+  
+  .success {
+    color: green;
+    text-align: center;
+    margin-top: 12px;
+  }
+  

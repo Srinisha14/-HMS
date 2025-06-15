@@ -1,0 +1,135 @@
+/* Existing CSS */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #eef4f9;
+}
+
+.register-card {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+}
+
+.register-card h2 {
+  margin-bottom: 25px;
+  text-align: center;
+  color: #0077b6;
+}
+
+.register-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.register-card label {
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.register-card input,
+.register-card select,
+.register-card textarea {
+  padding: 10px;
+  margin-bottom: 18px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.register-card button {
+  padding: 10px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.register-card button:hover {
+  background-color: #005f87;
+}
+
+.error-msg {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.success-msg {
+  color: green;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.login-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.login-btn {
+  background-color: #66a3d2;
+  margin-left: auto;
+}
+
+.login-btn:hover {
+  background-color: #4d89b1;
+}
+
+.login-link {
+  color: #0077b6;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* New CSS for Popup */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's on top of other content */
+}
+
+.popup-content {
+  background-color: white;
+  padding: 30px 50px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  animation: fadeInScale 0.3s ease-out; /* Simple animation for appearance */
+}
+
+.popup-message {
+  /* Green color for success message */
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+/* Optional: Keyframes for animation */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

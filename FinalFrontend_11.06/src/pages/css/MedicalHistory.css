@@ -1,0 +1,206 @@
+.medical-form-container {
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  color: #045b91;
+  font-family: 'Roboto', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.medical-form-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.medical-form-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 26px;
+  font-family: 'Poppins', sans-serif;
+  color: #045b91;
+}
+
+.medical-form-container label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #045b91;
+  font-family: 'Poppins', sans-serif;
+}
+
+.medical-form-container input,
+.medical-form-container select,
+.medical-form-container textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #045b91;
+  font-family: 'Roboto', sans-serif;
+}
+
+.medical-form-container textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.medical-form-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #045b91;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.medical-form-container button:hover {
+  background-color: #034a78;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.success {
+  color: green;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.medical-history {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #eef6fb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.medical-history h3 {
+  text-align: center;
+  color: #045b91;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+
+.history-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.history-card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.history-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-body p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #045b91;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card-body input,
+.card-body textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 6px 0;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.card-footer {
+  margin-top: 15px;
+  text-align: right;
+}
+
+.edit-button {
+  padding: 8px 16px;
+  background-color: #045b91;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.edit-button:hover {
+  background-color: #034a78;
+}
+
+.delete-button {
+  background-color: #d9534f;
+}
+
+.delete-button:hover {
+  background-color: #c9302c;
+}
+
+.card-placeholder {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  padding: 40px 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* New styles for popup message */
+.popup-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #4caf50; /* Green background for success */
+  color: white;
+  padding: 15px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 1000; /* Ensure it appears above other elements */
+  text-align: center;
+}
+/* === HEADER WITH LOGO === */
+.history-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.history-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}

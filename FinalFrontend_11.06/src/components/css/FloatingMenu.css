@@ -1,0 +1,55 @@
+
+.floating-menu {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 5;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  pointer-events: auto;
+}
+
+  
+  .circle-button {
+    width: 60px;
+    height: 60px;
+    background-color: #045b91;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 28px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s ease;
+  }
+  
+  .circle-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .menu-icons {
+    margin-bottom: 10px; /* Space between button and icons */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu-icons svg {
+    font-size: 24px;
+    cursor: pointer;
+    color: #007bff;
+    transition: transform 0.2s, color 0.2s;
+  }
+  
+  .menu-icons svg:hover {
+    color: #0056b3;
+    transform: scale(1.2);
+  }
+  
